@@ -13,4 +13,4 @@ When setting up a new Node.js project with version control:
 
 ### 3. How can version control help in managing Node.js dependencies?
 
-Version control primarily manages Node.js dependencies through package.json and package-lock.json. These files list the exact dependencies and their versions, ensuring consistent installations across environments. Developers commit these files, but not the node_modules/ folder itself, as dependencies can be reinstalled anytime using npm install. This keeps the repository lean and manageable.
+Version control primarily manages Node.js dependencies through package.json and package-lock.json. These files list the exact dependencies and their versions, ensuring consistent installations across environments. Developers commit these files, but not the node_modules.
