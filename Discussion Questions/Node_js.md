@@ -12,7 +12,7 @@ Node.js's single-threaded nature means it excels at concurrent I/O operations (n
 
 1. Efficiency: Excellent for concurrent I/O, leading to high throughput.
 2. Responsiveness: No blocking, so applications remain nimble.
-3. Scalability: Efficient resource usage for many connections.
+3. Scalability: Efficient resource usage for many connections
    
 **Disadvantages:**
 
