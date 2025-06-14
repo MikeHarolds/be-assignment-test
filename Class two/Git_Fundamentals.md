@@ -27,4 +27,10 @@ The purpose of a repository in version control (like Git) is to serve as the cen
 
 
 **3. How does Git track changes in your codebase?**
+Git tracks changes by taking snapshots of your codebase at each commit, rather than storing differences (deltas) directly.
 
+**Here's how:**
+- **Content-Addressed Storage:** Every file's content, directory structure, and commit metadata is hashed (using SHA-1) into a unique ID.
+- **Objects:** These hashes lead to "objects" stored in a hidden .git directory. There are "blob" objects for file content, "tree" objects for directory structures, and "commit" objects that link to a specific tree and its parent commit(s).
+
+- **Efficiency:** If a file hasn't changed, Git simply reuses its existing object, making commits very lightweight. Diffs are calculated on-the-fly when needed.
